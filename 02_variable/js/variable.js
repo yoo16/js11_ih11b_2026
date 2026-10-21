@@ -1,4 +1,5 @@
 // TODO: 変数定義 商品名「itemName」: var または let で定義
+var itemName = "コーヒー"
 
 // TODO: 変数定義 価格「price」: var または let で定義
 
