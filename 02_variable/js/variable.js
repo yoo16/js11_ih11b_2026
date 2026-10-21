@@ -20,6 +20,7 @@ itemName = "紅茶"
 console.log(itemName)
 
 // TODO: 価格, 個数, 割引 をコンソール表示: console.log(price, quantity, discount)
+console.log(price, quantity, discount)
 
 // TODO: 商品名を表示: itemName を代入
 document.getElementById("item-name").textContent
