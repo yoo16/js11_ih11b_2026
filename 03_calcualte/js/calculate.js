@@ -25,6 +25,7 @@ subTotalPrice = price * quantity
 totalPrice = subTotalPrice - discount
 
 // TODO: 税抜き金額 = 合計金額 / (1 + 税率): taxWithoutPrice
+taxWithoutPrice = totalPrice / (1 + TAX_RATE)
 
 // TODO: 税抜き金額を四捨五入: toFixed()
 
