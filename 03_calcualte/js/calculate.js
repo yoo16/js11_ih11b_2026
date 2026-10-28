@@ -47,7 +47,10 @@ var orderNo = 20341;
 
 // TODO: オーダーコード生成（数値連結）※ 注意)文字列連結ではない
 var orderCode;
+// 数値の計算
 orderCode = tableNo + orderNo
+// 文字で連結
+orderCode = tableNo + "" + orderNo
 
 // TODO: オーダーコード生成（テキスト連結） xx-xxxx 形式: バッククォートで囲む
 // orderCode = `${tableNo}-${orderNo}`;
