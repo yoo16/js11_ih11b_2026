@@ -51,9 +51,10 @@ var orderCode;
 orderCode = tableNo + orderNo
 // 文字で連結
 orderCode = tableNo + "-" + orderNo
+orderCode = "R" + tableNo + "-" + orderNo + "S"
 
 // TODO: オーダーコード生成（テキスト連結） xx-xxxx 形式: バッククォートで囲む
-// orderCode = `${tableNo}-${orderNo}`;
+orderCode = `R${tableNo}-${orderNo}S`;
 
 // HTML表示
 document.getElementById('item-name').textContent = itemName;
