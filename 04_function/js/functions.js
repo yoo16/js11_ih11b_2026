@@ -67,7 +67,8 @@ const hello1 = function(name)
 {
     return name + "さん、いらっしゃい"
 }
-// document.getElementById("hello1").textContent = hello1("東京 太郎");
+
+document.getElementById("hello1").textContent = hello1("東京 太郎");
 
 // ==============================
 // アロー関数
