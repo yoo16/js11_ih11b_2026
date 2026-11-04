@@ -67,15 +67,18 @@ const hello1 = function(name)
 {
     return name + "さん、いらっしゃい"
 }
-
+// id=hello1 への表示
 document.getElementById("hello1").textContent = hello1("東京 太郎");
 
 // ==============================
 // アロー関数
 // ==============================
 // TODO: hello1 と同じ処理をアロー関数で hello2 に代入: const hello2 = (name) => { };
-const hello2 = null;
-// document.getElementById("hello2").textContent = hello2("東京 太郎");
+const hello2 = (name) => {
+    return name + "さん、いらっしゃい"
+}
+
+document.getElementById("hello2").textContent = hello2("東京 太郎");
 
 // ==============================
 // 実行のタイミング
