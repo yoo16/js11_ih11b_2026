@@ -45,6 +45,16 @@ let seconds = 0;
 // TODO: setInterval() で1秒ごとに seconds を +1 して、#count に「n秒」と表示する
 //       第1引数: 実行する関数、第2引数: 間隔（ミリ秒）
 
+setInterval(function () {
+    seconds++
+    document.getElementById("count").textContent = seconds
+}, 1000)
+
+// setInterval(() => {
+    
+// }, 1000);
+
+
 // ==============================
 // ユーザ定義関数
 // ==============================
