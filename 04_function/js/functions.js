@@ -63,7 +63,10 @@ document.getElementById("calc2").textContent = calculate(71);
 // 無名関数
 // ==============================
 // TODO: name + "さん、いらっしゃい" を返す無名関数を hello1 に代入: const hello1 = function (name) { };
-const hello1 = null;
+const hello1 = function(name)
+{
+    return name + "さん、いらっしゃい"
+}
 // document.getElementById("hello1").textContent = hello1("東京 太郎");
 
 // ==============================
