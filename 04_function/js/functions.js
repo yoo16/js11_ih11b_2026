@@ -18,7 +18,7 @@ let nan3 = isNaN(5)    // 5（数値）
 // Math
 let height = 169.5;
 // TODO: 四捨五入: Math.round()
-let rounded;
+let rounded = Math.round(height)
 // TODO: 切り上げ: Math.ceil()
 let ceiled;
 // TODO: 切り捨て: Math.floor()
