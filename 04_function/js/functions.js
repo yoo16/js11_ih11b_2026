@@ -49,9 +49,12 @@ let seconds = 0;
 // ユーザ定義関数
 // ==============================
 // TODO: 引数 x を2乗して返す関数 calculate を定義: x ** 2
-function calculate(x) {
-
+function calculate(x) 
+{
+    let answer = x ** 2
+    return answer
 }
+
 
 document.getElementById("calc1").textContent = calculate(8);
 document.getElementById("calc2").textContent = calculate(71);
