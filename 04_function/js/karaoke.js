@@ -161,7 +161,7 @@ function simulate() {
     let childPrice = getPricePer30min("child", isHoliday)
 
     // TODO: 区分ごとのルーム料金を calcRoomFee() で求める（上の料金を変数のまま渡す）: adultFee, studentFee, childFee
-    let adultFee = 0;
+    let adultFee = calcRoomFee(adult, adultPrice, minutes)
     let studentFee = 0;
     let childFee = 0;
 
