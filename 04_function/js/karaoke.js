@@ -35,9 +35,10 @@ function getPricePer30min(type, isHoliday) {
  */
 function calcRoomFee(people, pricePer30min, minutes) {
     // TODO: 30分単位の回数 = 利用時間 / 30: units
+    let units = minutes / 30;
 
     // TODO: ルーム料金 = 人数 * 30分あたりの料金 * 回数 を return する
-    return 0;
+    return people * pricePer30min * units;
 }
 
 /**
