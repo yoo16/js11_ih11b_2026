@@ -77,7 +77,7 @@ function addTax(price) {
  */
 function calcSubtotal(roomFee, drinkFee) {
     // TODO: ルーム料金 + ドリンクバー料金 を return する
-    return 0;
+    return roomFee + drinkFee
 }
 
 /**
