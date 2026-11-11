@@ -162,11 +162,11 @@ function simulate() {
 
     // TODO: 区分ごとのルーム料金を calcRoomFee() で求める（上の料金を変数のまま渡す）: adultFee, studentFee, childFee
     let adultFee = calcRoomFee(adult, adultPrice, minutes)
-    let studentFee = 0;
-    let childFee = 0;
+    let studentFee = calcRoomFee(student, studentPrice, minutes)
+    let childFee = calcRoomFee(child, childPrice, minutes)
 
     // TODO: ルーム料金 = 大人 + 学生 + 子供: roomFee
-    let roomFee = 0;
+    let roomFee = adultFee + studentFee + childFee
 
     // TODO: ドリンクバー料金を三項演算子で設定（useDrink が true なら 人数 * DRINK_PRICE、false なら 0）: drinkFee
     let drinkFee = 0;
