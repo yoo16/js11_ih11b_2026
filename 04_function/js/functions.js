@@ -103,5 +103,7 @@ function showYokohama() {
 }
 
 // TODO: showTokyo をページの読み込み後に実行: window.onload = ...（( ) は付けない）
+showTokyo()
 
 // TODO: showYokohama をすぐに実行
+showYokohama()
