@@ -51,7 +51,7 @@ setInterval(function () {
 }, 1000)
 
 // setInterval(() => {
-    
+
 // }, 1000);
 
 
@@ -59,8 +59,7 @@ setInterval(function () {
 // ユーザ定義関数
 // ==============================
 // TODO: 引数 x を2乗して返す関数 calculate を定義: x ** 2
-function calculate(x) 
-{
+function calculate(x) {
     let answer = x ** 2
     return answer
 }
@@ -73,8 +72,7 @@ document.getElementById("calc2").textContent = calculate(71);
 // 無名関数
 // ==============================
 // TODO: name + "さん、いらっしゃい" を返す無名関数を hello1 に代入: const hello1 = function (name) { };
-const hello1 = function(name)
-{
+const hello1 = function (name) {
     return name + "さん、いらっしゃい"
 }
 // id=hello1 への表示
@@ -94,6 +92,11 @@ document.getElementById("hello2").textContent = hello2("東京 太郎");
 // 実行のタイミング
 // ==============================
 // TODO: #message に「東京」を追加する関数 showTokyo を定義: textContent +=
+// fun と入力して function statetment を選択
+function showTokyo() {
+    document.getElementById("message").textContent += "東京"
+}
+
 // TODO: #message に「横浜」を追加する関数 showYokohama を定義: textContent +=
 
 // TODO: showTokyo をページの読み込み後に実行: window.onload = ...（( ) は付けない）
