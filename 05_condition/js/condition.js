@@ -51,6 +51,10 @@ switch (weekday) {
         trash = "燃えるゴミ"
         break;
 
+    case 4:
+        trash = "燃えないゴミ"
+        break;
+
     default:
         trash = "回収なし"
         break;
