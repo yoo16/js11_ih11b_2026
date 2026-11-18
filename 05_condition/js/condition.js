@@ -1,7 +1,7 @@
 // ======================================
 // 条件式チェック
 // ======================================
-let price = 500
+let price = 10000
 let money = 1000
 let result1 = null
 let result2 = null
@@ -46,6 +46,15 @@ let weekday = 4
 let trash = ""
 
 // TODO:weekday に応じて switch 文でゴミの種類を設定: Switch Statement
+switch (weekday) {
+    case 1:
+        trash = "燃えるゴミ"
+        break;
+
+    default:
+        trash = "回収なし"
+        break;
+}
 
 // ======================================
 // 結果を HTML に表示（id を指定して代入）
