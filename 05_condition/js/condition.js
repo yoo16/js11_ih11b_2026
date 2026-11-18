@@ -42,12 +42,13 @@ if (price < 0) {
 
 // switchゴミ曜日
 // 曜日インデックス（0:日 1:月 2:火 3:水 4:木 5:金 6:土）
-let weekday = 4
+let weekday = 2
 let trash = ""
 
 // TODO:weekday に応じて switch 文でゴミの種類を設定: Switch Statement
 switch (weekday) {
     case 1:
+    case 5:
         trash = "燃えるゴミ"
         break;
 
