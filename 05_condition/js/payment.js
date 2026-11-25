@@ -283,6 +283,12 @@ function completePayment() {
     //    resultDisplay.textContent = `${point} ポイント付与しました。`
     // 2. それ以外 の時
     //    resultDisplay.textContent = "ポイントカードは使用されませんでした。"
+    if (hasPointCard) {
+        const point = Math.floor(getTotal() * POINT_RATE);
+        resultDisplay.textContent = `${point} ポイント付与しました。`;
+    } else {
+        resultDisplay.textContent = "ポイントカードは使用されませんでした。";
+    }
 
     // 決済完了メッセージ表示
     payButton.disabled = false;
