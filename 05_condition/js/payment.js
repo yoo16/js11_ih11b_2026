@@ -258,6 +258,7 @@ function handlePayment() {
     showStatus("決済処理中です...");
     // TODO: ビープ音再生: if (isAudioPlay)
     // isAudioPlay=true の時: audioBeep.play()
+    if (isAudioPlay) audioBeep.play();
 
     // 疑似処理待機: setTimeout() で 1.8 秒後に completePayment() を実行
     setTimeout(() => completePayment(), 1800);
@@ -267,9 +268,14 @@ function completePayment() {
     // TODO: 現金決済の場合、所持金から引く
     // 1. money -= getTotal()
     // 2. updateWallet() を実行
+    if (selectedMethod === "cash") {
+        money -= getTotal();
+        updateWallet();
+    }
 
     // TODO: 決済完了ファンファーレ再生
     // isAudioPlay=true の時: audioFanfare.play()
+    if (isAudioPlay) audioFanfare.play();
 
     // TODO: ポイントカードを読み取っていれば、ポイントを付与
     // 1. hasPointCard が true の時
