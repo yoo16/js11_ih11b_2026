@@ -218,12 +218,18 @@ function showQrCode() {
 function goToConfirm() {
     // TODO: 決済方法選択チェック
     // selectedMethod が空(false) : "決済方法を選択してください。" を表示して return
-    showStatus("決済方法を選択してください。");
+    if (!selectedMethod) {
+        showStatus("決済方法を選択してください。");
+        return;
+    }
 
     // TODO: 現金だけ残高チェック
     // selectedMethod が cash かつ money < getTotal()
     // : "残高不足です。チャージしてください。" を表示して return
-    showStatus("残高不足です。チャージしてください。");
+    if (selectedMethod === "cash" && money < getTotal()) {
+        showStatus("残高不足です。チャージしてください。");
+        return;
+    }
 
     // レンダリング（確認画面の内容を作る）
     renderSummary();
